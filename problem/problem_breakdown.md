@@ -37,7 +37,14 @@ As a user,
 So that I can grow my list of bookmarks,
 I want to add new bookmarks.
 ```
+```
+User story 3
+----------
+As a user,
+So that I can maintain my list of bookmarks,
+I want to delete bookmarks.
+```
 Objects | Messages
 --------------- | -------------------
-bookmarks_list | view, add(url)
+bookmarks_list | view, add(url, title), delete(url, title)
 

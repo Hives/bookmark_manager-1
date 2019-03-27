@@ -17,6 +17,22 @@
         null,
         null
       ],
+      "/Users/arthurashman/Projects/MakersAcademy/week-4/bookmarks_manager/spec/features/deleting_bookmarks_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/arthurashman/Projects/MakersAcademy/week-4/bookmarks_manager/spec/features/homepage_spec.rb": [
         1,
         null,
@@ -78,10 +94,24 @@
         null,
         null,
         null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1553706489
+    "timestamp": 1553709581
   }
 }

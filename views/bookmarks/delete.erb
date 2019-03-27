@@ -1,0 +1,14 @@
+<h2>Delete a bookmark</h2>
+
+<ul>
+  <% @bookmarks.each do |bookmark| %>
+    <li>
+      <form action="/bookmarks/delete" method="POST">
+        <%= bookmark.title %> (<%= bookmark.url %>)
+        <input type="submit" id="delete-item-<%= bookmark.id%>" value="Delete">
+        <input type="hidden" name="id" value="<%= bookmark.id%>">
+      </form>
+    </li>
+  <% end %>
+</ul>
+

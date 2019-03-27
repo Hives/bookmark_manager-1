@@ -32,5 +32,19 @@ describe Bookmark do
     end
   end
 
+  describe "#delete" do
+    it "deletes a bookmark" do
+      connection = PG.connect(dbname: 'bookmark_manager_test')
+
+      bookmark = Bookmark.add(url: "http://www.google.com", title: "Google")
+      Bookmark.add(url: "http://www.facebook.com", title: "Facebook")
+      
+      Bookmark.delete(bookmark.id)
+      
+      expect(connection.exec( "SELECT * FROM bookmarks WHERE title = 'Facebook'").count).to eq 1
+      expect(connection.exec( "SELECT * FROM bookmarks WHERE title = 'Google'").count).to eq 0
+    end
+  end
+
 
 end
