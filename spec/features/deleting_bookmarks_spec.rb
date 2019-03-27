@@ -7,7 +7,6 @@ feature 'Deleting bookmarks' do
     result = connection.exec("INSERT INTO bookmarks (url, title) VALUES ('http://www.google.com', 'Google') RETURNING id, title, url;")
     id = result[0]['id']
     visit('/bookmarks/delete')
-    save_and_open_page
     find("#delete-item-#{id}").click
     expect(connection.exec( "SELECT * FROM bookmarks WHERE id = #{id}").count).to eq 0
   end
