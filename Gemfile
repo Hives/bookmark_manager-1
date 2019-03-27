@@ -5,6 +5,7 @@ ruby '2.5.0'
 gem 'pg'
 gem 'rack'
 gem 'rake'
+gem 'rerun'
 gem 'shotgun'
 gem 'sinatra'
 
