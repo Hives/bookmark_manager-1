@@ -4,18 +4,23 @@ require 'pg'
 describe Bookmark do
   describe "#view_all" do
     it "returns all bookmarks" do
-    connection = PG.connect(dbname: 'bookmark_manager_test')
+      Bookmark.add('http://www.makersacademy.com', 'Makers Academy')
+      Bookmark.add('http://www.google.com', "Google")
 
-    connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com');")
-    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com');")
-    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.google.com');")
+      bookmarks = Bookmark.view_all
 
-    bookmarks = Bookmark.view_all
-
-    expect(bookmarks).to include('http://www.makersacademy.com')
-    expect(bookmarks).to include('http://www.destroyallsoftware.com')
-    expect(bookmarks).to include('http://www.google.com')
-    
+      expect(bookmarks).to include( { :url => "http://www.makersacademy.com", :title => "Makers Academy" } )
+      expect(bookmarks).to include( { :url => "http://www.google.com", :title => "Google" } )
     end
   end
+
+  describe "#add" do
+    it "adds a bookmark" do
+      Bookmark.add("http://www.google.com", "Google")
+      bookmarks = Bookmark.view_all
+      expect(bookmarks).to include( { :url => "http://www.google.com", :title => "Google" } )
+    end
+  end
+
+
 end

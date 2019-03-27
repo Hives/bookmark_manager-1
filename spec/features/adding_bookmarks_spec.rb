@@ -6,7 +6,9 @@ feature 'Adding bookmarks' do
 
     visit('/bookmarks/add')
     fill_in 'url', with: "http://www.google.com"
+    fill_in 'title', with: "Google"
     click_button 'Add'
-    expect(page).to have_content "http://www.google.com"
+    click_link 'Google'
+    expect(page).to have_current_path("http://www.google.com")
   end
 end
