@@ -24,13 +24,20 @@ Filter bookmarks by tag
 Users manage their bookmarks
 
 ```
-User story
+User story 1
 ----------
 As a user,
 So that I can quickly access websites I regularly visit,
 I want to view a list of my bookmarks.
 ```
-
+```
+User story 2
+----------
+As a user,
+So that I can grow my list of bookmarks,
+I want to add new bookmarks.
+```
 Objects | Messages
 --------------- | -------------------
-bookmarks_list | view
+bookmarks_list | view, add(url)
+
