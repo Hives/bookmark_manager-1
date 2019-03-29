@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for 03-arthur-wednesday</title>
+    <title>Code coverage for 05-paul-friday</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-03-29T14:56:39+00:00">2019-03-29T14:56:39+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-03-29T16:02:37+00:00">2019-03-29T16:02:37+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>5</b> files in total.
-    <b>64</b> relevant lines. 
-    <span class="green"><b>64</b> lines covered</span> and
+    <b>63</b> relevant lines. 
+    <span class="green"><b>63</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -51,17 +51,17 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#3e7a575abd09b079f50c392bce9ba525c4e731e8" class="src_link" title="spec/features/adding_bookmarks_spec.rb">spec/features/adding_bookmarks_spec.rb</a></td>
+        <td class="strong"><a href="#b8969cc0e6189f3097bd71c9860890b347ab9d45" class="src_link" title="spec/features/adding_bookmarks_spec.rb">spec/features/adding_bookmarks_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>14</td>
-        <td>10</td>
-        <td>10</td>
+        <td>13</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#bff9f3719a8f2b962c638635d11982e7a41c2fb6" class="src_link" title="spec/features/deleting_bookmarks_spec.rb">spec/features/deleting_bookmarks_spec.rb</a></td>
+        <td class="strong"><a href="#fbca613ba15f2c2617f98c232bc2f8ed49352f3f" class="src_link" title="spec/features/deleting_bookmarks_spec.rb">spec/features/deleting_bookmarks_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>16</td>
         <td>10</td>
@@ -71,7 +71,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#68580ec51ae7b224696688bcb42e196df702a486" class="src_link" title="spec/features/homepage_spec.rb">spec/features/homepage_spec.rb</a></td>
+        <td class="strong"><a href="#27efc16f37aa148b6658a14a338331b34f0c6d15" class="src_link" title="spec/features/homepage_spec.rb">spec/features/homepage_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>9</td>
         <td>5</td>
@@ -81,7 +81,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#91882a6703d5e4075462082c3711449af724daee" class="src_link" title="spec/features/viewing_bookmarks_spec.rb">spec/features/viewing_bookmarks_spec.rb</a></td>
+        <td class="strong"><a href="#03663fa13720f7b2ab5d4d7630081ad0353936c9" class="src_link" title="spec/features/viewing_bookmarks_spec.rb">spec/features/viewing_bookmarks_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>13</td>
         <td>8</td>
@@ -91,7 +91,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#c6c7807e705bad44a10d95999863d03f8f52253d" class="src_link" title="spec/units/bookmark_spec.rb">spec/units/bookmark_spec.rb</a></td>
+        <td class="strong"><a href="#5214c967c4dc6d14661072457e57448ad2df35cd" class="src_link" title="spec/units/bookmark_spec.rb">spec/units/bookmark_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>50</td>
         <td>31</td>
@@ -116,13 +116,13 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="3e7a575abd09b079f50c392bce9ba525c4e731e8">
+        <div class="source_table" id="b8969cc0e6189f3097bd71c9860890b347ab9d45">
   <div class="header">
     <h3>spec/features/adding_bookmarks_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -193,22 +193,16 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_link &#39;Google&#39;</code>
+          <code class="ruby">    expect(page).to have_content &#39;Google&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    expect(page).to have_current_path(&quot;http://www.google.com&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>
@@ -219,7 +213,7 @@
 </div>
 
       
-        <div class="source_table" id="bff9f3719a8f2b962c638635d11982e7a41c2fb6">
+        <div class="source_table" id="fbca613ba15f2c2617f98c232bc2f8ed49352f3f">
   <div class="header">
     <h3>spec/features/deleting_bookmarks_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -334,7 +328,7 @@
 </div>
 
       
-        <div class="source_table" id="68580ec51ae7b224696688bcb42e196df702a486">
+        <div class="source_table" id="27efc16f37aa148b6658a14a338331b34f0c6d15">
   <div class="header">
     <h3>spec/features/homepage_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -407,7 +401,7 @@
 </div>
 
       
-        <div class="source_table" id="91882a6703d5e4075462082c3711449af724daee">
+        <div class="source_table" id="03663fa13720f7b2ab5d4d7630081ad0353936c9">
   <div class="header">
     <h3>spec/features/viewing_bookmarks_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -504,7 +498,7 @@
 </div>
 
       
-        <div class="source_table" id="c6c7807e705bad44a10d95999863d03f8f52253d">
+        <div class="source_table" id="5214c967c4dc6d14661072457e57448ad2df35cd">
   <div class="header">
     <h3>spec/units/bookmark_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
