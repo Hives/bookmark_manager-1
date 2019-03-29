@@ -5,8 +5,8 @@
     <li>
       <form action="/bookmarks/delete" method="POST">
         <%= bookmark.title %> (<%= bookmark.url %>)
-        <input type="submit" id="delete-item-<%= bookmark.id%>" value="Delete">
-        <input type="hidden" name="id" value="<%= bookmark.id%>">
+        <input type="submit" id="delete-item-<%= bookmark.id %>" value="Delete">
+        <input type="hidden" name="id" value="<%= bookmark.id %>">
       </form>
     </li>
   <% end %>
